@@ -1,0 +1,75 @@
+
+X.Org X Server 1.13.3
+Release Date: 2013-03-07
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.2.0-37-generic x86_64 Ubuntu
+Current Operating System: Linux ballance-Latitude-E6430s 3.8.0-25-generic #37-Ubuntu SMP Thu Jun 6 20:47:07 UTC 2013 x86_64
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.8.0-25-generic root=UUID=366770e7-24b8-4dc4-a8c8-8b5654c0d1fd ro quiet splash vt.handoff=7
+Build Date: 17 April 2013  10:43:13PM
+xorg-server 2:1.13.3-0ubuntu6 (For technical support please see http://www.ubuntu.com/support) 
+Current version of pixman: 0.28.2
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Jun 23 18:19:51 2013
+(==) Using config file: "/etc/X11/xorg.conf"
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Initializing built-in extension Generic Event Extension
+Initializing built-in extension SHAPE
+Initializing built-in extension MIT-SHM
+Initializing built-in extension XInputExtension
+Initializing built-in extension XTEST
+Initializing built-in extension BIG-REQUESTS
+Initializing built-in extension SYNC
+Initializing built-in extension XKEYBOARD
+Initializing built-in extension XC-MISC
+Initializing built-in extension SECURITY
+Initializing built-in extension XINERAMA
+Initializing built-in extension XFIXES
+Initializing built-in extension RENDER
+Initializing built-in extension RANDR
+Initializing built-in extension COMPOSITE
+Initializing built-in extension DAMAGE
+Initializing built-in extension MIT-SCREEN-SAVER
+Initializing built-in extension DOUBLE-BUFFER
+Initializing built-in extension RECORD
+Initializing built-in extension DPMS
+Initializing built-in extension X-Resource
+Initializing built-in extension XVideo
+Initializing built-in extension XVideo-MotionCompensation
+Initializing built-in extension SELinux
+Initializing built-in extension XFree86-VidModeExtension
+Initializing built-in extension XFree86-DGA
+Initializing built-in extension XFree86-DRI
+Initializing built-in extension DRI2
+Loading extension GLX
+--> xf86OutputCreate: 0x7f38de183fd0
+<-- xf86OutputCreate: 0x7f38de183fd0
+pt 1
+pt 1.1
+pt 1.2 modes=(nil)
+(EE) 
+(EE) Backtrace:
+(EE) 0: X (xorg_backtrace+0x36) [0x7f38ddc31476]
+(EE) 1: X (0x7f38dda81000+0x1b42b9) [0x7f38ddc352b9]
+(EE) 2: /lib/x86_64-linux-gnu/libpthread.so.0 (0x7f38dcb84000+0xfbd0) [0x7f38dcb93bd0]
+(EE) 3: /usr/lib/xorg/modules/drivers/displaylink_drv.so (0x7f38da451000+0x30b5) [0x7f38da4540b5]
+(EE) 4: X (InitOutput+0xafa) [0x7f38ddb1bd5a]
+(EE) 5: X (0x7f38dda81000+0x47386) [0x7f38ddac8386]
+(EE) 6: /lib/x86_64-linux-gnu/libc.so.6 (__libc_start_main+0xf5) [0x7f38db7d1ea5]
+(EE) 7: X (0x7f38dda81000+0x478c1) [0x7f38ddac88c1]
+(EE) 
+(EE) Segmentation fault at address 0x24
+
+Fatal server error:
+Caught signal 11 (Segmentation fault). Server aborting
+
+(EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+(EE) Please also check the log file at "/var/log/Xorg.0.log" for additional information.
+(EE) 
+Server terminated with error (1). Closing log file.
